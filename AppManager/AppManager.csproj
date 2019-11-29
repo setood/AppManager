@@ -8,8 +8,4 @@
     <PackageReference Include="System.ComponentModel.Composition" Version="4.6.0" />
   </ItemGroup>
 
-  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="xcopy &quot;$(TargetDir)*&quot; &quot;$(SolutionDir)Build&quot;  /s /i /Y" />
-  </Target>
-
 </Project>
