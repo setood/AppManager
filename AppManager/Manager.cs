@@ -75,6 +75,9 @@ namespace AppManager
         #endregion
 
         #region public methods
+        /// <summary>
+        /// Загружает сборки и добавляет их в Container
+        /// </summary>
         public static void LoadAssemblies(IEnumerable<Assembly> assemblies)
         {
             if (isLoaded == false)
@@ -98,6 +101,9 @@ namespace AppManager
 
             return;
         }
+        /// <summary>
+        /// Загружает сборки и добавляет их в Container
+        /// </summary>
         public static void LoadAssemblieFromFolder(string folderPath)
         {
 
