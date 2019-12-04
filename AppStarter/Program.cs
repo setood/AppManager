@@ -9,7 +9,6 @@ namespace AppStarter
     {
         static async Task Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
             Manager.LoadAssemblieFromFolder(ConfigurationManager.AppSettings["ModulesPath"]);
             await Manager.InitializeAsync();
             await Manager.RunAsync();
