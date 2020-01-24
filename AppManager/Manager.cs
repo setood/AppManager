@@ -104,7 +104,7 @@ namespace AppManager
         /// <summary>
         /// Загружает сборки и добавляет их в Container
         /// </summary>
-        public static void LoadAssemblieFromFolder(string folderPath)
+        public static void LoadAssembliesFromFolder(string folderPath)
         {
 
             IEnumerable<Assembly> assemblies = ImportAssemblyFromDirectory(folderPath);
